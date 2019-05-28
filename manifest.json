@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "Quick Dial",
+  "version": "0.1",
+
+
+  "description": "Get pages from bookmarks to the new tab",
+
+  "icons": {
+    "48": "icons/quick-dial-48.png",
+    "96": "icons/quick-dial-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["quick-dial.js"]
+    }
+  ]
+
+}
